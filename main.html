@@ -4,8 +4,18 @@
     <meta charset="utf-8">
     <title>namuwiki</title>
     <link rel="stylesheet" href="main.css">
+    <script src="button.js"></script>
+    <style media="screen">
+      
+    </style>
+    </script>
   </head>
   <body>
+    <div class="topmenu">
+      <ul>
+        <li> 나무위키 </li>
+      </ul>
+    </div>
     <article>
       <div class="title_top">
         <h1 id="theme">구글 네스트</h1>
@@ -54,19 +64,18 @@
 
       <div class="context">
         <div>
-          <div id="1." class="subtitle"><button> > </button><strong>1.개요</strong></div>
+          <div id="1." class="subtitle"><input type="button" id='skip' value='>' onclick="collapse(this)"> <strong>1.개요</strong></div>
           <div id="1.con" class="con">
             <div class="memo"> Made by Google. Voice-activated speaker powered by the Google Assistant. </div><br>
             <div class="memo"> 구글에서 선보이는 준비된 호출식 스피커 (구글 어시스턴트 기반) </div>
-
             <div>
-              <p>구글 네스트(Google Nest)는 구글에서 만든 스마트 스피커다. 경쟁 대상으로는 아마존 에코, 애플의 HomePod등이 있다. 가정용 비서 역할을 한다. 딥러닝 기반이다. 이전 명칭은 구글 홈(Google Home).[2] </p>
+              <p>구글 네스트(Google Nest)는 구글에서 만든 스마트 스피커다. 경쟁 대상으로는 아마존 에코, 애플의 HomePod등이 있다. 가정용 비서 역할을 한다. 딥러닝 기반이다. 이전 명칭은 구글 홈(Google Home).<span class="target">[2]</span> </p>
 
               <p>2016년 5월에 발표되었으며 2016년 11월 미국에서, 2017년 4월에는 영국에서 출시되었고, 그 이후로 2017년 중순에 오스트레일리아, 캐나다, 프랑스, 독일, 일본에 출시되었다.
                 한국도 2018년 9월 11일 공개되어 예약 구매를 진행했으며, 동월 18일 출시되었다. 8월 말부터는 어시스턴트도 광고를 시작했다.</p>
 
               <p>또한 라즈베리 파이 사용자를 위한 구글 AIY 보이스 킷(구글 홈 DIY 에디션)도 준비되어 있으며, 가격은 24.99달러이다.
-                라즈베리 파이를 사용했던 초기 AIY킷과는 다르게 라즈베리 파이 제로WH[3]를 사용한다. </p>
+                라즈베리 파이를 사용했던 초기 AIY킷과는 다르게 라즈베리 파이 제로WH<span class="target">[3]</span>를 사용한다. </p>
 
               <p>2019년 5월 7일부터는 구글 홈 시리즈가 구글 네스트(Google Nest) 시리즈로 리브랜딩되었다.
                 이에 따라 구글 홈 허브는 구글 네스트 허브로 변경되었으며,
@@ -74,17 +83,17 @@
                 네스트 미니, 네스트 허브 맥스가 바로 대표적인 케이스로, 리브랜딩되기 이전에는 각각 '홈 미니 2세대', '홈 허브 맥스'으로 알려졌었다. </p> </div>
             </div>
         </div>
-        <div id="2." class="subtitle"><button> > </button><strong>2.상세</strong></div>
-        <div id="3." class="subtitle"><button> > </button><strong>3.구글 어시스턴트</strong></div>
-        <div id="4." class="subtitle"><button> > </button><strong>4.변형 제품</strong></div>
-        <div id="4.1." class="subtitle"><button> > </button><strong>4.1.네스트 오디오</strong></div>
-        <div id="4.2." class="subtitle"><button> > </button><strong>4.2.구글 네스트 미니(구. 구글 홈 미니)</strong></div>
-        <div id="4.3." class="subtitle"><button> > </button><strong>4.3.구글 홈 맥스</strong></div>
-        <div id="4.4." class="subtitle"><button> > </button><strong>4.4.구글 네스트 허브(구. 구글 홈 허브)</strong></div>
-        <div id="4.5." class="subtitle"><button> > </button><strong>4.5.구글 네스트 허브 맥스</strong></div>
-        <div id="5" class="subtitle"><button> > </button><strong>5.기타</strong></div>
-        <div id="6." class="subtitle"><button> > </button><strong>6.한국에서 무료로 사용 가능한 기능</strong></div>
-        <div id="7." class="subtitle"><button> > </button><strong>7.문서</strong></div>
+        <div id="2." class="subtitle"><input type="button" id='skip' value='>' onclick="skipContents(this);"><strong>2.상세</strong></div>
+        <div id="3." class="subtitle"><input type="button" id='skip' value='>' onclick="skipContents(this);"><strong>3.구글 어시스턴트</strong></div>
+        <div id="4." class="subtitle"><input type="button" id='skip' value='>' onclick="skipContents(this);"><strong>4.변형 제품</strong></div>
+        <div id="4.1." class="subtitle"><input type="button" id='skip' value='>' onclick="skipContents(this);"><strong>4.1.네스트 오디오</strong></div>
+        <div id="4.2." class="subtitle"><input type="button" id='skip' value='>' onclick="skipContents(this);"><strong>4.2.구글 네스트 미니(구. 구글 홈 미니)</strong></div>
+        <div id="4.3." class="subtitle"><input type="button" id='skip' value='>' onclick="skipContents(this);"><strong>4.3.구글 홈 맥스</strong></div>
+        <div id="4.4." class="subtitle"><input type="button" id='skip' value='>' onclick="skipContents(this);"><strong>4.4.구글 네스트 허브(구. 구글 홈 허브)</strong></div>
+        <div id="4.5." class="subtitle"><input type="button" id='skip' value='>' onclick="skipContents(this);"><strong>4.5.구글 네스트 허브 맥스</strong></div>
+        <div id="5" class="subtitle"><input type="button" id='skip' value='>' onclick="skipContents(this);"><strong>5.기타</strong></div>
+        <div id="6." class="subtitle"><input type="button" id='skip' value='>' onclick="skipContents(this);"><strong>6.한국에서 무료로 사용 가능한 기능</strong></div>
+        <div id="7." class="subtitle"><input type="button" id='skip' value='>' onclick="skipContents(this);"><strong>7.문서</strong></div>
 
 
       </div>
